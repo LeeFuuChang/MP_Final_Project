@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Camera : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class Camera : MonoBehaviour
         this.gameObject.transform.position = new Vector3(vec.x, this.gameObject.transform.position.y, vec.z);
         this.gameObject.transform.LookAt(new Vector3(0, this.gameObject.transform.position.y, 0));
         this.gameObject.transform.rotation = this.gameObject.transform.rotation * Quaternion.Euler(viewAngle, 0, 0);
+    }
+
+    public void GoRolling()
+    {
+        SceneManager.LoadScene("Rolling");
     }
 
     IEnumerator SimulatePlayer()

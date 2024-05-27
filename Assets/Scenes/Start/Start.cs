@@ -7,6 +7,6 @@ public class Start : MonoBehaviour
 {
     public void StartButtonClicked()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Guide");
     }
 }

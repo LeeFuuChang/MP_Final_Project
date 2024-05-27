@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Rolling/Rolling.unity
+    guid: 88178a2ac15a94a81ae06b08a30018c8
+  - enabled: 1
+    path: Assets/Scenes/Fate/Fate.unity
+    guid: b91b75d5480a54ff0be16c5228251101
+  - enabled: 1
+    path: Assets/Scenes/Guide/Guide.unity
+    guid: bee0e6775010a42408da515e1dd59f56
+  - enabled: 1
+    path: Assets/Scenes/Hint/Hint.unity
+    guid: e8574c1d25b1642f4805550ac8c87469
+  - enabled: 1
+    path: Assets/Scenes/SelectCharactor/SelectCharactor.unity
+    guid: b96be7b92b5854578a3bc453dc02afcc
   m_configObjects: {}
