@@ -12,7 +12,6 @@ public class Camera : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
         radius = Vector3.Scale(this.gameObject.transform.position, new Vector3(1, 0, 1)).magnitude;
         slope = this.gameObject.transform.position.magnitude;
         StartCoroutine(SimulatePlayer());

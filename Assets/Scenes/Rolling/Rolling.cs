@@ -31,7 +31,8 @@ public class Rolling : MonoBehaviour
         float ijumping = 1.2f;
         while(interval < 2f)
         {
-            while(previous == resulting) {
+            while(previous == resulting)
+            {
                 resulting = Random.Range(1, 7);
             }
             text.text = $"{resulting}";
