@@ -41,7 +41,7 @@ public class Rolling : MonoBehaviour
             interval *= ijumping;
         }
         yield return new WaitForSeconds(3f);
-        PlayerPrefs.SetInt("Rolling", rollingResult);
+        PlayerPrefs.SetInt("Rolling", resulting);
         SceneManager.LoadScene("Game");
     }
 }
