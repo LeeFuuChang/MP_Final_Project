@@ -58,8 +58,13 @@ public class Game : MonoBehaviour
     {
         switch(cellPosition)
         {
+            case 0:
+                SceneManager.LoadScene("End");
+                return;
+
             // NTHU View Cells
             case 1:
+                SceneManager.LoadScene("Library");
                 return;
             case 3:
                 return;
@@ -103,7 +108,7 @@ public class Game : MonoBehaviour
                 return;
             case 39:
                 return;
-            
+
             // Fate Cells
             case 7:
             case 22:
@@ -117,6 +122,11 @@ public class Game : MonoBehaviour
     public void GoRolling()
     {
         SceneManager.LoadScene("Rolling");
+    }
+
+    public void GoLottery()
+    {
+        SceneManager.LoadScene("Lottery");
     }
 
     IEnumerator SimulatePlayer()

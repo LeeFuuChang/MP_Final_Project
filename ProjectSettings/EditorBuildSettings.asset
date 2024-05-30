@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Rolling/Rolling.unity
     guid: 88178a2ac15a94a81ae06b08a30018c8
   - enabled: 1
+    path: Assets/Scenes/Lottery/Lottery.unity
+    guid: e2a247999340c9e45ba51966536ee808
+  - enabled: 1
     path: Assets/Scenes/Fate/Fate.unity
     guid: b91b75d5480a54ff0be16c5228251101
   - enabled: 1
