@@ -29,4 +29,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectCharactor/SelectCharactor.unity
     guid: b96be7b92b5854578a3bc453dc02afcc
+  - enabled: 1
+    path: Assets/Scenes/Views/Administration/Administration.unity
+    guid: e047a927cf305734e93df39ca19a1287
+  - enabled: 1
+    path: Assets/Scenes/Views/Chemical/Chemical.unity
+    guid: 7e38398f9b7ce514bba5d9c516c5c49a
+  - enabled: 1
+    path: Assets/Scenes/Views/Club/Club.unity
+    guid: 354aa0ac24de9bc429e17d0e72390ee2
+  - enabled: 1
+    path: Assets/Scenes/Views/Door/Door.unity
+    guid: 066249b78c4164f37a1f515446d04a51
+  - enabled: 1
+    path: Assets/Scenes/Views/Grass/Grass.unity
+    guid: 9d3647dcfa0790740958ff8638478173
+  - enabled: 1
+    path: Assets/Scenes/Views/Lake/Lake.unity
+    guid: a0e60318b6fc01248b08670c07bc15d9
+  - enabled: 1
+    path: Assets/Scenes/Views/Library/Library.unity
+    guid: 21008036967b541ee90ca965cb87d978
+  - enabled: 1
+    path: Assets/Scenes/Views/Physics/Physics.unity
+    guid: f0a7272ae838bbb4fbd6fbc5fd69bcf9
+  - enabled: 1
+    path: Assets/Scenes/Views/Playground/Playground.unity
+    guid: e385dc2f908def54c9353a9fed9162c3
+  - enabled: 1
+    path: Assets/Scenes/Views/Police/Police.unity
+    guid: 780b99db130fb6441bc512ef8a06c369
   m_configObjects: {}

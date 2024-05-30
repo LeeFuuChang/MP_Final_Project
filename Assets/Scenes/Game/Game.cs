@@ -64,55 +64,66 @@ public class Game : MonoBehaviour
 
             // NTHU View Cells
             case 1:
-                SceneManager.LoadScene("Library");
+                SceneManager.LoadScene("Door");
                 return;
-            case 3:
+            case 2:
+                SceneManager.LoadScene("Playground");
                 return;
-            case 6:
+            case 4:
+                SceneManager.LoadScene("Chemical");
                 return;
-            case 8:
+            case 5:
+                SceneManager.LoadScene("Lake");
+                return;
+            case 7:
+                SceneManager.LoadScene("Club");
                 return;
             case 9:
+                SceneManager.LoadScene("Administration");
                 return;
             case 11:
+                SceneManager.LoadScene("Physics");
                 return;
-            case 13:
+            case 12:
+                SceneManager.LoadScene("Library");
                 return;
             case 14:
+                SceneManager.LoadScene("Grass");
                 return;
-            case 16:
+            case 15:
+                SceneManager.LoadScene("Police");
                 return;
-            case 18:
+            case 17:
+                SceneManager.LoadScene("Lake");
                 return;
             case 19:
+                SceneManager.LoadScene("Chemical");
+                return;
+            case 20:
+                SceneManager.LoadScene("Lake");
                 return;
             case 21:
+                SceneManager.LoadScene("Library");
                 return;
-            case 23:
+            case 22:
+                SceneManager.LoadScene("Administration");
                 return;
-            case 24:
+            case 25:
+                SceneManager.LoadScene("Physics");
                 return;
             case 26:
-                return;
-            case 27:
+                SceneManager.LoadScene("Club");
                 return;
             case 29:
+                SceneManager.LoadScene("Playground");
                 return;
             case 31:
-                return;
-            case 32:
-                return;
-            case 34:
-                return;
-            case 37:
-                return;
-            case 39:
+                SceneManager.LoadScene("Chemical");
                 return;
 
             // Fate Cells
-            case 7:
-            case 22:
-            case 36:
+            case 18:
+            case 28:
                 SceneManager.LoadScene("Fate");
                 return;
         }
