@@ -7,7 +7,6 @@ public class Camera : MonoBehaviour
     public float viewAngle = 60f;
     public float radius = 0.8125f;
     public float slope = 0.6364f;
-    public GameObject player;
 
     void Start()
     {
@@ -17,6 +16,8 @@ public class Camera : MonoBehaviour
 
     void Update()
     {
+        GameObject player = GameObject.Find("Player");
+        if(player == null) return;
         float scale = this.gameObject.transform.position.magnitude / slope;
         Vector3 vec = new Vector3(player.transform.position.x, 0, player.transform.position.z).normalized * radius * scale;
         this.gameObject.transform.position = new Vector3(vec.x, this.gameObject.transform.position.y, vec.z);
