@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1512
     height: 916
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,12 +217,12 @@ MonoBehaviour:
     height: 520.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 481
     height: 866
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -344,7 +344,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1e720000
       m_LastClickedID: 0
-      m_ExpandedIDs: a0adffff5ab1ffff9cb1ffffaeb2ffffccdaffff7edcffff0cdeffffc4dfffffa2e0ffff8ce1fffff0e2ffff3ce6ffffd0e8ffffb0eaffff80ebffff1cedffffe8efffff92f2ffff3cf3ffff4af4ffff46f8ffffe8f9ffff585b0000165c00008a5c0000ce5c0000845d0000e65d0000b45e0000d85e0000465f000020600000cc60000038620000c062000032630000c8630000c867000044680000
+      m_ExpandedIDs: 96d0feffdcd1feffd4d5feff3cd9feff3eddfeff60dffeffbce9feffccedfeff8ceffeff0ef1feffa6f2feff4ef5feff66f7feffe0f7feff4cf8feffb6f8feff14fcfeffc6fdfeff44fffeff0400ffff5001ffff4403ffff0205ffff4c05ffffb406ffff920fffffa210ffff8014ffff3c17ffff3c18ffffa418ffff061cffffb61cffff421fffffbc1fffff6223ffffe224ffff4025ffff6226ffff6c28ffff502affffd22bfffff4ffffff6c830000ec830000b8840000588500000a8600006686000050870000ba870000ce8800003a890000188b000030940000409400001a9500006c950000ca9500004a960000c2960000b6970000ec9700003298000056980000fa980000d09900003c9a0000be9a0000689b0000e6a6000048a7000000a900000ead0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -430,7 +430,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
       floating: 1
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -112, y: 195}
+      snapOffset: {x: -112, y: -304.5}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       id: Orientation
       index: 0
       layout: 4
@@ -833,9 +833,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.016519, y: 2.5412035, z: 7.091501}
+    m_Target: {x: 11.410107, y: -0.20088097, z: 10.875739}
     speed: 2
-    m_Value: {x: 1.016519, y: 2.5412035, z: 7.091501}
+    m_Value: {x: 11.410107, y: -0.20088097, z: 10.875739}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -881,13 +881,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0031271768, y: 0.7211621, z: -0.692754, w: -0.0032560742}
+    m_Target: {x: -0.1779517, y: 0.81331146, z: -0.4520638, w: -0.32015488}
     speed: 2
-    m_Value: {x: -0.003127172, y: 0.72116095, z: -0.6927529, w: -0.003256069}
+    m_Value: {x: -0.17795141, y: 0.8133102, z: -0.45206308, w: -0.32015437}
   m_Size:
-    m_Target: 6.298974
+    m_Target: 2.198731
     speed: 2
-    m_Value: 6.298974
+    m_Value: 2.198731
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -905,7 +905,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.00036481788, y: -0.798914, z: 0.6014457, w: 0.00048508772}
+  m_LastSceneViewRotation: {x: 0.0016496927, y: 0.833539, z: -0.5524554, w: 0.002488238}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -991,7 +991,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scenes/Views
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -999,16 +999,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scenes/Views
   m_LastFoldersGridSize: 71
   m_LastProjectPath: /Users/leefuuchang/Desktop/MP_Final_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: f25a0000
-    m_LastClickedID: 23282
-    m_ExpandedIDs: 00000000e65a0000f25a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 67.5}
+    m_SelectedIDs: 76420000
+    m_LastClickedID: 17014
+    m_ExpandedIDs: 00000000064100004641000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e65a0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000fe730000da5a0000fa680000000000008c5e0000fe1e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25976
+  m_LastSelectedObjectID: 44312
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
