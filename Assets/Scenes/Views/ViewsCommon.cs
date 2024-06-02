@@ -5,8 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class ViewsCommon : MonoBehaviour
 {
+    public VideoController vc;
+    public int videoId = -1;
+
     public void ExitButtonClicked()
     {
-        SceneManager.LoadScene("Game");
+        if(videoId == -1)
+        {
+            Debug.LogError("Video ID unset!!!");
+            return;
+        }
+        vc.OpenVideo(videoId);
+        // SceneManager.LoadScene("Game");
     }
 }
