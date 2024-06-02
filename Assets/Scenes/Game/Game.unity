@@ -742,7 +742,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -824,21 +823,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 929257990}
   m_LocalEulerAnglesHint: {x: 60, y: -135, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1d604080564ed4884ff455ea307c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  viewAngle: 60
-  radius: 0.815
-  slope: 0.6364
 --- !u!1 &1057670343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1014,7 @@ MonoBehaviour:
   edgeCellCount: 7
   cells: []
   map: {fileID: 929257986}
+  balanceToLottery: 10000
   balanceText: {fileID: 358475234}
   defaultCharactorPrefab: {fileID: 8316499967985282492, guid: 501d3aef6b1ff4e7590473ce9cc3f8d5, type: 3}
   maleCharactorPrefab: {fileID: 938599015255922866, guid: 5063fcdd5b6164784abb9c541b4f57a7, type: 3}

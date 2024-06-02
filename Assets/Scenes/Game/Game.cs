@@ -12,12 +12,15 @@ public class Game : MonoBehaviour
     public Vector2[] cells;
     public GameObject map;
 
+    public int balanceToLottery = 10000;
+
     public TextMeshProUGUI balanceText;
 
     public GameObject defaultCharactorPrefab;
     public GameObject maleCharactorPrefab;
     public GameObject femaleCharactorPrefab;
 
+    private GameObject camera;
     private GameObject player;
 
     void Start()
@@ -47,6 +50,8 @@ public class Game : MonoBehaviour
             }
         }
 
+        camera = GameObject.Find("Camera");
+
         switch(PlayerPrefs.GetString("Charactor", "N"))
         {
             case "M":
@@ -71,12 +76,26 @@ public class Game : MonoBehaviour
 
     public void MovePlayerToCell(int cellPosition)
     {
-        player.transform.localPosition = new Vector3(
+        Vector3 curtCellPosition = new Vector3(
             cells[cellPosition].x,
             player.transform.localPosition.y,
             cells[cellPosition].y
         );
+        Vector3 nextCellPosition = new Vector3(
+            cells[(cellPosition+1) % cells.Length].x,
+            player.transform.localPosition.y,
+            cells[(cellPosition+1) % cells.Length].y
+        );
+        Vector3 deltaVector = (nextCellPosition - curtCellPosition).normalized;
+        player.transform.localPosition = curtCellPosition;
+        player.transform.LookAt(player.transform.position + deltaVector);
         PlayerPrefs.SetInt("Position", cellPosition);
+        camera.transform.localPosition = new Vector3(
+            player.transform.localPosition.x - (deltaVector.z + deltaVector.x)*0.1f,
+            player.transform.localPosition.y + 6f,
+            player.transform.localPosition.z - (deltaVector.z - deltaVector.x)*0.1f
+        );
+        camera.transform.LookAt(player.transform.position);
     }
 
     public void TriggerCellAt(int cellPosition)
@@ -211,28 +230,39 @@ public class Game : MonoBehaviour
 
     public void GoLottery()
     {
-        SceneManager.LoadScene("Lottery");
+        if(PlayerPrefs.GetInt("Balance", 0) >= balanceToLottery)
+        {
+            SetBalance(PlayerPrefs.GetInt("Balance", 0) - balanceToLottery);
+            SceneManager.LoadScene("Lottery");
+        }
     }
 
     IEnumerator SimulatePlayer()
     {
+        // while(true)
+        // {
+        //     yield return new WaitForSeconds(1f);
+        //     int rollingResult = PlayerPrefs.GetInt("Rolling");
+        //     if(rollingResult > 0)
+        //     {
+        //         int playerPosition = PlayerPrefs.GetInt("Position");
+        //         for(int i = 0; i < rollingResult; i++)
+        //         {
+        //             playerPosition = (playerPosition+1) % cells.Length;
+        //             MovePlayerToCell(playerPosition);
+        //             yield return new WaitForSeconds(0.5f);
+        //         }
+        //         PlayerPrefs.SetInt("Rolling", 0);
+        //         yield return new WaitForSeconds(1f);
+        //         TriggerCellAt(playerPosition);
+        //     }
+        // }
+        int playerPosition = PlayerPrefs.GetInt("Position");
         while(true)
         {
-            yield return new WaitForSeconds(1f);
-            int rollingResult = PlayerPrefs.GetInt("Rolling");
-            if(rollingResult > 0)
-            {
-                int playerPosition = PlayerPrefs.GetInt("Position");
-                for(int i = 0; i < rollingResult; i++)
-                {
-                    playerPosition = (playerPosition+1) % cells.Length;
-                    MovePlayerToCell(playerPosition);
-                    yield return new WaitForSeconds(0.5f);
-                }
-                PlayerPrefs.SetInt("Rolling", 0);
-                yield return new WaitForSeconds(1f);
-                TriggerCellAt(playerPosition);
-            }
+            yield return new WaitForSeconds(0.5f);
+            MovePlayerToCell(playerPosition);
+            playerPosition = (playerPosition+1) % cells.Length;
         }
     }
 }
