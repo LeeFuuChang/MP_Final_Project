@@ -7,41 +7,52 @@ using TMPro;
 
 public class Rolling : MonoBehaviour
 {
-    public TextMeshProUGUI text;
-    public RawImage rawImageBg;
+    public Transform rollingBG;
 
-    void Start()
+    public float initialSpeed = 1000f;
+    public float speedDecay = 1.25f;
+
+    private bool rolled = false;
+    private float rollingSpeed = 0f;
+
+    void Update()
     {
-        rawImageBg.gameObject.SetActive(false);
-        text.gameObject.SetActive(false);
+        rollingBG.Rotate(new Vector3(0, 0, this.rollingSpeed * Random.Range(0.75f, 1.25f) * Time.deltaTime));
     }
 
     public void StartRolling()
     {
-        rawImageBg.gameObject.SetActive(true);
-        text.gameObject.SetActive(true);
+        if(this.rolled) return;
+        this.rolled = true;
+        this.rollingSpeed = this.initialSpeed;
+        rollingBG.Rotate(new Vector3(0, 0, Random.Range(0f, 360f)));
         StartCoroutine(WaitForRollingResult());
     }
 
     IEnumerator WaitForRollingResult()
     {
-        int resulting = Random.Range(1, 7);
-        int previous = 0;
-        float interval = 0.05f;
-        float ijumping = 1.2f;
-        while(interval < 2f)
+        while(this.rollingSpeed > 2)
         {
-            while(previous == resulting)
-            {
-                resulting = Random.Range(1, 7);
-            }
-            text.text = $"{resulting}";
-            yield return new WaitForSeconds(interval);
-            previous = resulting;
-            interval *= ijumping;
+            yield return new WaitForSeconds(0.5f);
+            this.rollingSpeed /= this.speedDecay;
         }
-        yield return new WaitForSeconds(3f);
-        PlayerPrefs.SetInt("Rolling", resulting);
+        this.rollingSpeed = 0;
+        int result = this.getRollingResultByAngle((rollingBG.localEulerAngles.z+360f)%360f);
+        PlayerPrefs.SetInt("Rolling", result);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Game");
+    }
+
+    private int getRollingResultByAngle(float angle)
+    {
+        if(337.5f < angle && angle <=  22.5f) return 1;
+        if( 22.5f < angle && angle <=  67.5f) return 2;
+        if( 67.5f < angle && angle <= 112.5f) return 3;
+        if(112.5f < angle && angle <= 157.5f) return 4;
+        if(157.5f < angle && angle <= 202.5f) return 5;
+        if(202.5f < angle && angle <= 247.5f) return 6;
+        if(247.5f < angle && angle <= 292.5f) return 7;
+        if(292.5f < angle && angle <= 337.5f) return 8;
+        return 1;
     }
 }
