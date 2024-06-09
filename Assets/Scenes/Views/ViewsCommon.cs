@@ -29,7 +29,7 @@ public class ViewsCommon : MonoBehaviour
     {
         if(!GameObject.Find("360")) return;
 
-        int turnSpeedMouse = 1000;
+        int turnSpeedMouse = 100;
 
         Transform camera = GameObject.Find("Main Camera").GetComponent<Transform>();
         camera.Rotate(new Vector3(Input.GetAxis("Mouse Y"),-Input.GetAxis("Mouse X"), 0)*Time.deltaTime*turnSpeedMouse);

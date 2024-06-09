@@ -8,7 +8,7 @@ public class Begin : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("Rolling", 0);
-        PlayerPrefs.SetInt("Balance", 0);
+        PlayerPrefs.SetInt("Balance", 10000);
         PlayerPrefs.SetInt("Position", 0);
         PlayerPrefs.SetString("Charactor", "N");
     }

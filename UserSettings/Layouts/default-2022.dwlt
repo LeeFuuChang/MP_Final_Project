@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1512
     height: 916
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -414,21 +414,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 080effff9c0effff6844ffff1865ffffc06fffffb881ffff8283ffff1286ffffa293ffff0694ffffba94ffff3896ffffbc97ffff7c99ffff1e9bffffea9bffff9e9cffff5a9dffff76a0ffffd8a0ffff76a2ffffcaa3ffff70a4ffff0cb7ffff78b7ffff36b8ffffd0b9ffff1ebbffff22bbffff86bbffff98bdffff9abdfffffebdffff92bfffff96bffffff8bfffff44c1ffff46c1ffffa8c1ffff48c4ffff4cc4ffffb2c4ffff02c6ffff04c6ffff6ec6ffff34c7fffff2c7ffff6ac9ffff6ec9ffffd2c9ffffaacbffffaecbffffb0cbffff68ccffffb0e4ffff06e6ffff5cefffff22fbfffff0590000045a0000b6690000b06b0000207a0000c4860000ce860000b6900000d4900000
+      m_ExpandedIDs: 90e5ffffe2e5ffff9ae6ffff52e7fffffce7ffff4ee8ffff06e9ffffbee9ffff7aeaffff32ebffffe4ebffff5eeeffff3cefffff32f0ffffb4f1ffffa2f2ffff58f3ffffa2f3ffff78f4ffff60f5ffff56f6ffff56f7ffff24faffff14fbffff025b0000e25b00009c5c0000585d0000065e0000225f00007a5f00004e600000d461000086620000b66300008464000032650000dc650000bc6600008467000000680000b668000090690000586a0000ac6a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 23708
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -905,7 +905,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.20329222, y: 0.7802298, z: -0.49879327, w: -0.31799823}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -991,7 +991,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Rolling
+    - Assets/Scenes/Views
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -999,16 +999,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scenes/Rolling
+  - Assets/Scenes/Views
   m_LastFoldersGridSize: 71
   m_LastProjectPath: /Users/leefuuchang/MP_Final_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95.5}
-    m_SelectedIDs: 685a0000
-    m_LastClickedID: 23144
-    m_ExpandedIDs: 00000000465a0000485a00004a5a00004c5a0000605a00006c5a000000ca9a3b
+    scrollPos: {x: 0, y: 175.5}
+    m_SelectedIDs: 8a5a0000
+    m_LastClickedID: 23178
+    m_ExpandedIDs: 00000000625a0000645a0000665a0000685a00006a5a00008a5a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000465a0000485a00004a5a00004c5a0000
+    m_ExpandedIDs: 00000000625a0000645a0000665a0000685a00006a5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

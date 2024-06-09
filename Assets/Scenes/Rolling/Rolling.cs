@@ -17,7 +17,7 @@ public class Rolling : MonoBehaviour
 
     void Update()
     {
-        rollingBG.Rotate(new Vector3(0, 0, this.rollingSpeed * Random.Range(0.75f, 1.25f) * Time.deltaTime));
+        rollingBG.Rotate(new Vector3(0, 0, this.rollingSpeed * Time.deltaTime));
     }
 
     public void StartRolling()
